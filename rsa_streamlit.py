@@ -109,7 +109,6 @@ if st.button("Générer les clés RSA"):
     private_key_query = ",".join(map(str, private_key))
     st.experimental_set_query_params(public_key=public_key_query, private_key=private_key_query)
     st.success("Vous avez généré des clés RSA.")
-    st.code(public_key, private_key )
 
 st.write("---")
 
