@@ -102,7 +102,7 @@ with col2:
     q = st.number_input("__Saisir un autre nombre premier q:__", step = 1, value=23, min_value=0)
 
 # Génération des clés RSA
-if st.button("Générer les clés RSA"):
+if st.button("__Générer les clés RSA__"):
     public_key, private_key = generate_keypair(int(p), int(q))
     public_key_query = ",".join(map(str, public_key))
     private_key_query = ",".join(map(str, private_key))
@@ -116,7 +116,7 @@ col3, col4 = st.columns(2)
 plaintext = col3.text_input("__Entrer le message à chiffrer:__")
 
 # Chiffrement du message en clair
-if col3.button("Chiffrer"):
+if col3.button("__Chiffrer__"):
     if public_key is not None:
         cipher = encrypt(plaintext, public_key)
         col3.success("__Message chiffré!__")
@@ -126,7 +126,7 @@ if col3.button("Chiffrer"):
 
 # Déchiffrement du message chiffré
 ciphertext = col4.text_input("__Entrer le message à déchiffrer:__")
-if col4.button("Déchiffrer"):
+if col4.button("__Déchiffrer__"):
     if private_key is not None:
         if len(ciphertext) > 0:
             decrypted_message = decrypt(eval(ciphertext), private_key)
