@@ -5,7 +5,6 @@ st.set_page_config(
     page_title="RSA Chiffrement",
     page_icon="random",
     initial_sidebar_state="collapsed"
-
 )
 
 def is_prime(n):
@@ -98,9 +97,9 @@ if public_key_query is not None and private_key_query is not None:
 # Entrée des nombres premiers p et q
 col1, col2 = st.columns(2)
 with col1:
-    p = st.number_input("Saisir un nombre premier p:", step = 1, value=11, min_value=0)
+    p = st.number_input("__Saisir un nombre premier p:__", step = 1, value=11, min_value=0)
 with col2:
-    q = st.number_input("Saisir un autre nombre premier q:", step = 1, value=23, min_value=0)
+    q = st.number_input("__Saisir un autre nombre premier q:__", step = 1, value=23, min_value=0)
 
 # Génération des clés RSA
 if st.button("Générer les clés RSA"):
@@ -108,35 +107,35 @@ if st.button("Générer les clés RSA"):
     public_key_query = ",".join(map(str, public_key))
     private_key_query = ",".join(map(str, private_key))
     st.experimental_set_query_params(public_key=public_key_query, private_key=private_key_query)
-    st.success("Vous avez généré des clés RSA.")
+    st.success("__Vous avez généré des clés RSA.__")
 
 st.write("---")
 
 col3, col4 = st.columns(2)
 # Entrée du message en clair
-plaintext = col3.text_input("__Entrer le message à chiffré:__")
+plaintext = col3.text_input("__Entrer le message à chiffrer:__")
 
 # Chiffrement du message en clair
 if col3.button("Chiffrer"):
     if public_key is not None:
         cipher = encrypt(plaintext, public_key)
-        col3.success("Message chiffré!")
+        col3.success("__Message chiffré!__")
         col3.code(cipher)
     else:
-        col3.warning("Veuillez d'abord générer les clés RSA.")
+        col3.warning("__Veuillez d'abord générer les clés RSA.__")
 
 # Déchiffrement du message chiffré
-ciphertext = col4.text_input("Entrer le message chiffré:")
+ciphertext = col4.text_input("__Entrer le message à déchiffrer:__")
 if col4.button("Déchiffrer"):
     if private_key is not None:
         if len(ciphertext) > 0:
             decrypted_message = decrypt(eval(ciphertext), private_key)
-            col4.success("Message déchiffré!")
+            col4.success("__Message déchiffré!__")
             col4.code(decrypted_message)
         else:
-            col4.warning("Veuillez entrer un texte chiffré valide.")
+            col4.warning("__Veuillez entrer un texte chiffré valide.__")
     else:
         col4.warning("Veuillez d'abord générer les clés RSA.")
 
 st.write("---")
-st.markdown('**Z. IZ - A. NM**      -     **MSID**')
+st.markdown('**Z. IZ - A. NM**      -     :red[**MSID**]')
