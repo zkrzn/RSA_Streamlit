@@ -16,6 +16,7 @@ Ce projet consiste à implémenter le chiffrement RSA, un algorithme de cryptogr
 
 - `decrypt(cipher, private_key)`: Cette fonction déchiffre un message chiffré en utilisant la clé privée. Elle prend chaque nombre du message chiffré, le met à la puissance `d` et prend le reste de la division par `n`, puis convertit le résultat en caractère.
 
-L'application Streamlit utilise ces fonctions pour permettre à l'utilisateur de générer une paire de clés RSA, de chiffrer un message avec la clé publique et de le déchiffrer avec la clé privée. Les clés et le message chiffré sont affichés à l'utilisateur.
+Cette application Streamlit utilise des fonctionnalités pour permettre à l'utilisateur de générer une paire de clés RSA à partir de deux nombres premiers modifiables (par défaut : 11 et 23). Ensuite, l'utilisateur peut chiffrer un message avec la clé publique et le déchiffrer avec la clé privée. Le message chiffré est affiché à l'utilisateur sous la forme d'une liste de nombres [Nombre,Nombre,….]. 
 
-L'application Streamlit fournie est une implémentation efficace et conviviale du chiffrement RSA. Elle illustre bien comment le chiffrement RSA fonctionne et comment il peut être utilisé pour sécuriser les communications. Cependant, il est important de noter que dans un contexte réel, des mesures de sécurité supplémentaires seraient nécessaires pour protéger les clés et les données sensibles.
+Notre application fournie est une implémentation efficace et conviviale du chiffrement RSA. Elle illustre bien comment le chiffrement RSA fonctionne et comment il peut être utilisé pour sécuriser les communications. Cependant, il est important de noter que dans un contexte réel, des mesures de sécurité supplémentaires seraient nécessaires pour protéger les clés et les données sensibles.
+
