@@ -22,10 +22,10 @@ Notre application fournie est une implémentation efficace et conviviale du chif
 
 ## ScreenShots
 
-![image1](screenshots/screencapture-chiffrementrsa-streamlit-app-1.png)
+![image1](Screenshots/screencapture-chiffrementrsa-streamlit-app-1.png)
 
-![image1](screenshots/screencapture-chiffrementrsa-streamlit-app-2.png)
+![image1](Screenshots/screencapture-chiffrementrsa-streamlit-app-2.png)
 
-![image1](screenshots/screencapture-chiffrementrsa-streamlit-app-3.png)
+![image1](Screenshots/screencapture-chiffrementrsa-streamlit-app-3.png)
 
-![image1](screenshots/screencapture-chiffrementrsa-streamlit-app-4.png)
+![image1](Screenshots/screencapture-chiffrementrsa-streamlit-app-4.png)
