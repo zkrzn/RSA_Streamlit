@@ -20,3 +20,12 @@ Cette application Streamlit utilise des fonctionnalités pour permettre à l'uti
 
 Notre application fournie est une implémentation efficace et conviviale du chiffrement RSA. Elle illustre bien comment le chiffrement RSA fonctionne et comment il peut être utilisé pour sécuriser les communications. Cependant, il est important de noter que dans un contexte réel, des mesures de sécurité supplémentaires seraient nécessaires pour protéger les clés et les données sensibles.
 
+## ScreenShots
+
+![image1](screenshots/screencapture-chiffrementrsa-streamlit-app-1.png)
+
+![image1](screenshots/screencapture-chiffrementrsa-streamlit-app-2.png)
+
+![image1](screenshots/screencapture-chiffrementrsa-streamlit-app-3.png)
+
+![image1](screenshots/screencapture-chiffrementrsa-streamlit-app-4.png)
